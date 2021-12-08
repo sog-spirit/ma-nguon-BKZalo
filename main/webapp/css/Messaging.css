@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam', sans-serif;
+}
+body {
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-image: linear-gradient(-135deg, #36D1DC, #5B86E5);
+}
+.header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 36px;
+    margin-left: 20px;
+    color: white;
+}
+.header img {
+    width: 30px;
+    height: auto;
+    display: flex;
+    margin: .4rem;
+    cursor: pointer;
+}
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 2rem 0 4rem;
+}
+.search-input {
+    font-size: 18px;
+    width: 100%;
+    padding: .4em;
+    border: none;
+    background: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+input[type=text]:focus {
+	outline: none !important;
+}
+.search-button {
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: none;
+    background-color: #ccc;
+    transition: background-color 0.5s ease;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #F0F0F0;
+    transition: background-color 0.5s ease;
+}
+.menu-icons-left {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    margin-left: 1rem;
+}
+.menu-icons-right {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    gap: 1.5rem;
+}
+.conversation-list {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(90px, 1fr));
+}
+.chat {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+.chat:hover {
+    background: rgb(241, 241, 241);
+}
+.user-icon-image {
+    margin: 19px;
+    display: table-column;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+.message-description {
+    margin: 14px;
+}
+.user-alias {
+    font-size: 24px;
+    font-weight: 700;
+}
+.last-message {
+    font-size: 18px;
+}
